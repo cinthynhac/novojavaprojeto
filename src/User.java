@@ -1,21 +1,24 @@
 public class User {
-    protected String nome;
-    protected double cpf;
-    protected int telefone;
-    protected String email;
 
-    public User (){
+    private String nome;
+    private double cpf;
+    private int telefone;
+    private String email;
 
-    }
-    public User(String nome, String email, int telefone, double cpf) {
+    //Construtor vazio
+    public User(){}
+
+    //Construtores
+
+    public User(String nome, double cpf, int telefone, String email) {
         this.nome = nome;
-        this.email = email;
-        this.telefone = telefone;
         this.cpf = cpf;
+        this.telefone = telefone;
+        this.email = email;
     }
 
 
-//getters and setters
+    //geters and setters
 
     public String getNome() {
         return nome;
